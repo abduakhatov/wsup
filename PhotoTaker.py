@@ -27,6 +27,7 @@ configure_uploads(app, photos)
 #         return 'Saved as ' + filename
 #     return render_template('./flask.html')
 
+
 @app.route('/pressure_gauge')
 def get_ressure_gauge():
 	if request.method == 'GET':
@@ -35,10 +36,7 @@ def get_ressure_gauge():
 			# todo save photo
 			return send_file('saved/Einstein.jpg', mimetype='image/jpg' )
 
-
-
-
-
+        
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0	', port=5000, debug=True)
