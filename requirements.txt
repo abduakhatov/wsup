@@ -1,0 +1,6 @@
+flask
+flask_uploads
+cv2
+scipy
+numpy
+picamera
